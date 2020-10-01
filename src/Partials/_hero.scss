@@ -3,4 +3,41 @@
   background-image: url("../img/hero.jpg");
   height: 450px;
 
+  &-text {
+    @include flexEnd;
+    height: 100%;
+
+    &-details {
+      color: $ColorWhite;
+      line-height: 30px;
+
+      & ul {
+        list-style: none;
+      }
+
+      & .btn {
+        display: flex,
+      }
+
+      & a {
+        line-height: 20px;
+        @extend %btn;
+        @include aNone;
+        color: $ColorWhite;
+      }
+
+      & i {
+      padding: 4px 0px 0px 12px;
+      border-left: 1px solid #fff;
+      height: 100%;
+      font-size: 26px;
+      }
+
+    }
+
+    &-offer {
+
+    }
+  }
+
 }

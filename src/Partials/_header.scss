@@ -8,14 +8,14 @@ header {
 
     &-top ul {
       @include listInline;
-      justify-content: flex-end;
+      @include flexEnd;
 
       & a {
         @include aNone;
 
         &:hover {
           text-decoration: underline;
-          color: $underlineColor;
+          color: $ColorWhite;
         }
       }
 
@@ -30,7 +30,7 @@ header {
 
       & a {
         @include aNone;
-        color: $underlineColor;
+        color: $ColorWhite;
       }
     }
   }

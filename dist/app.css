@@ -6,7 +6,13 @@
 
 .container {
   width: 80%;
+  height: 100%;
   margin: 0 auto;
+}
+
+.hero-text-details a {
+  padding: 10px 20px;
+  background-color: #5B5C5A;
 }
 
 header {
@@ -20,6 +26,7 @@ header .nav-bar {
 header .nav-bar-top ul {
   display: flex;
   list-style: none;
+  display: flex;
   justify-content: flex-end;
 }
 header .nav-bar-top ul a {
@@ -51,4 +58,31 @@ header .nav-bar-bottom ul a {
   background-position: top;
   background-image: url("../img/hero.jpg");
   height: 450px;
+}
+.hero-text {
+  display: flex;
+  justify-content: flex-end;
+  height: 100%;
+}
+.hero-text-details {
+  color: #F1F1F1;
+  line-height: 30px;
+}
+.hero-text-details ul {
+  list-style: none;
+}
+.hero-text-details .btn {
+  display: flex;
+}
+.hero-text-details a {
+  line-height: 20px;
+  text-decoration: none;
+  color: #777777;
+  color: #F1F1F1;
+}
+.hero-text-details i {
+  padding: 4px 0px 0px 12px;
+  border-left: 1px solid #fff;
+  height: 100%;
+  font-size: 26px;
 }

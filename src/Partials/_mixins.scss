@@ -3,6 +3,11 @@
   list-style: none;
 }
 
+@mixin flexEnd {
+  display: flex;
+  justify-content: flex-end;
+}
+
 @mixin aNone {
   text-decoration: none;
   color: #777777;
