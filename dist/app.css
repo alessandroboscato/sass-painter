@@ -1,46 +1,12 @@
-* {
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css);* {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-.page-wrapper {
-  max-width: 1024px;
-  width: 100%;
+.container {
+  max-width: 1200px;
   margin: 0 auto;
-}
-
-header {
-  display: flex;
-  justify-content: space-between;
-  height: 100px;
   background-color: red;
-}
-
-header .logo {
-  background-color: pink;
-}
-
-header .main-nav .menu-list {
-  display: flex;
-  list-style: none;
-}
-
-header .main-nav .menu-list li {
-  padding: 0 20px;
-}
-
-header .main-nav .menu-list li a {
-  color: pink;
-}
-
-main {
-  height: calc(100vh - 170px);
-  background-color: pink;
-}
-
-footer {
-  height: 100px;
-  background-color: green;
 }
 
