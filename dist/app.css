@@ -187,3 +187,12 @@ main #parallax {
   background-attachment: fixed;
   height: 800px;
 }
+main #tools {
+  background-color: #222222;
+}
+main #tools .img-tool {
+  width: 100%;
+}
+main #tools .img-tool img {
+  width: 100%;
+}
