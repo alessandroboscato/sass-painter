@@ -5,14 +5,15 @@
 }
 
 .container {
-  width: 80%;
+  width: 65%;
   height: 100%;
   margin: 0 auto;
 }
 
-.hero-text-details a {
+.hero-text-offer > a, .hero-text-details a {
   padding: 10px 20px;
   background-color: #5B5C5A;
+  display: inline-block;
 }
 
 header {
@@ -62,11 +63,12 @@ header .nav-bar-bottom ul a {
 .hero-text {
   display: flex;
   justify-content: flex-end;
-  height: 100%;
+  height: 90%;
 }
 .hero-text-details {
+  width: 40%;
   color: #F1F1F1;
-  line-height: 30px;
+  line-height: 40px;
 }
 .hero-text-details ul {
   list-style: none;
@@ -85,4 +87,28 @@ header .nav-bar-bottom ul a {
   border-left: 1px solid #fff;
   height: 100%;
   font-size: 26px;
+}
+.hero-text-offer {
+  width: 40%;
+  background-color: #020303;
+  color: #F1F1F1;
+  padding: 20px;
+}
+.hero-text-offer .offert {
+  display: flex;
+  justify-content: space-between;
+}
+.hero-text-offer > a {
+  text-decoration: none;
+  color: #777777;
+  background-color: #019CFF;
+  color: #F1F1F1;
+}
+.hero-text-offer > a:hover {
+  background-color: #28ACFF;
+}
+.hero-text-offer .banner {
+  margin-top: 30px;
+  background-color: #E6E6E6;
+  color: #2C2C2C;
 }
