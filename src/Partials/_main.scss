@@ -1,0 +1,53 @@
+main {
+position: relative;
+  & .main-menu {
+    height: 75px;
+    background-color: #E6E6E6;
+    line-height: 75px;
+    position: sticky;
+
+    & ul {
+      @include listInline;
+      justify-content: space-between;
+      align-content: center;
+
+      & a {
+        text-decoration: none;
+        color: #626262;
+      }
+    }
+  }
+  & #introduction {
+    background-image: url("../img/intro.jpg");
+    @include bgImg;
+    height: $heightSection;
+    color: $ColorWhite;
+    text-align: center;
+
+    & .video {
+      width: 100%;
+
+      & img {
+        width: 100%;
+      }
+    }
+  }
+
+  & #example {
+    height: $heightSection;
+
+    & .carousel {
+      width: 100%;
+
+      & img {
+        width: 100%;
+      }
+    }
+  }
+
+  & #parallax {
+    background-image: url("../img/image-bg-02.jpg");
+    background-attachment: fixed;
+    height: $heightSection;
+  }
+}

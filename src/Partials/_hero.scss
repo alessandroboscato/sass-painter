@@ -3,66 +3,87 @@
   background-image: url("../img/hero.jpg");
   height: 450px;
 
-  &-text {
-    @include flexEnd;
-    height: 90%;
+  .container {
 
-    &-details {
-      width: 40%;
-      color: $ColorWhite;
-      line-height: 40px;
+    .hero-text {
+      @include flexEnd;
+      height: 90%;
 
-      & ul {
-        list-style: none;
-      }
-
-      & .btn {
-        display: flex,
-      }
-
-      & a {
-        line-height: 20px;
-        @extend %btn;
-        @include aNone;
+      &-details {
+        width: 40%;
         color: $ColorWhite;
-      }
+        line-height: 40px;
 
-      & i {
-      padding: 4px 0px 0px 12px;
-      border-left: 1px solid #fff;
-      height: 100%;
-      font-size: 26px;
-      }
-    }
+        & ul {
+          list-style: none;
+        }
 
-    &-offer {
-      width: 40%;
-      background-color: #020303;
-      color: $ColorWhite;
-      padding: 20px;
+        & .btn {
+          display: flex,
+        }
 
-      & .offert {
-        display: flex;
-        justify-content: space-between;
-      }
+        & a {
+          line-height: 20px;
+          @extend %btn;
+          @include aNone;
+          color: $ColorWhite;
+        }
 
-      & > a {
-        @extend %btn;
-        @include aNone;
-        background-color: $iconsColor;
-        color: $ColorWhite;
+        & i {
+        padding: 4px 0px 0px 12px;
+        border-left: 1px solid #fff;
+        height: 100%;
+        font-size: 26px;
+        }
 
-        &:hover {
-          background-color: #28ACFF;
+        @media (max-width: 992px) {
+          width: 50%
         }
       }
 
-      & .banner {
-        margin-top: 30px;
-        background-color: #E6E6E6;
-        color: #2C2C2C;
+      &-offer {
+        width: 40%;
+        background-color: #020303;
+        color: $ColorWhite;
+        padding: 20px;
+
+        & .offert {
+          display: flex;
+          justify-content: space-between;
+        }
+
+        & > a {
+          @extend %btn;
+          @include aNone;
+          background-color: $iconsColor;
+          color: $ColorWhite;
+
+          &:hover {
+            background-color: #28ACFF;
+          }
+        }
+
+        & .banner {
+          margin-top: 30px;
+          background-color: #E6E6E6;
+          color: #2C2C2C;
+        }
+
+        @media (max-width: 992px) {
+          width: 50%
+        }
+      }
+
+      @media (max-width: 992px) {
+        justify-content: center;
       }
     }
+    @media (max-width: 992px) {
+      width: 95%;
+    }
+  }
+  @media (max-width: 992px) {
+    background-position: right;
   }
 
 }
