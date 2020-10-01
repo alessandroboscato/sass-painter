@@ -1,0 +1,6 @@
+.hero {
+  @include bgImg;
+  background-image: url("../img/hero.jpg");
+  height: 450px;
+
+}

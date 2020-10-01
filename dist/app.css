@@ -5,8 +5,50 @@
 }
 
 .container {
-  max-width: 1200px;
+  width: 80%;
   margin: 0 auto;
-  background-color: red;
 }
 
+header {
+  background-color: #111111;
+  height: 100px;
+  line-height: 50px;
+}
+header .nav-bar {
+  height: 100%;
+}
+header .nav-bar-top ul {
+  display: flex;
+  list-style: none;
+  justify-content: flex-end;
+}
+header .nav-bar-top ul a {
+  text-decoration: none;
+  color: #777777;
+}
+header .nav-bar-top ul a:hover {
+  text-decoration: underline;
+  color: #F1F1F1;
+}
+header .nav-bar-top ul i {
+  color: #019CFF;
+}
+header .nav-bar-bottom ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  align-items: center;
+}
+header .nav-bar-bottom ul a {
+  text-decoration: none;
+  color: #777777;
+  color: #F1F1F1;
+}
+
+.hero {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  background-image: url("../img/hero.jpg");
+  height: 450px;
+}
