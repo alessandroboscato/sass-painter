@@ -1,4 +1,10 @@
-@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css);* {
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css);.hero .container .hero-text-offer > a, .hero .container .hero-text-details a {
+  padding: 10px 20px;
+  background-color: #5B5C5A;
+  display: inline-block;
+}
+
+* {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -8,12 +14,6 @@
   width: 65%;
   height: 100%;
   margin: 0 auto;
-}
-
-.hero .container .hero-text-offer > a, .hero .container .hero-text-details a {
-  padding: 10px 20px;
-  background-color: #5B5C5A;
-  display: inline-block;
 }
 
 header {
@@ -158,41 +158,22 @@ main .main-menu ul a {
   text-decoration: none;
   color: #626262;
 }
+main section .container img {
+  width: 100%;
+}
 main #introduction {
   background-image: url("../img/intro.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
-  height: 800px;
-  color: #F1F1F1;
+  max-height: 800px;
   text-align: center;
-}
-main #introduction .video {
-  width: 100%;
-}
-main #introduction .video img {
-  width: 100%;
-}
-main #example {
-  height: 800px;
-}
-main #example .carousel {
-  width: 100%;
-}
-main #example .carousel img {
-  width: 100%;
+  color: #F1F1F1;
 }
 main #parallax {
   background-image: url("../img/image-bg-02.jpg");
   background-attachment: fixed;
-  height: 800px;
 }
 main #tools {
   background-color: #222222;
-}
-main #tools .img-tool {
-  width: 100%;
-}
-main #tools .img-tool img {
-  width: 100%;
 }

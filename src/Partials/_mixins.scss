@@ -18,3 +18,14 @@
   background-size: cover;
   background-position: top;
 }
+
+@mixin sections {
+  max-height: $heightSection;
+  text-align: center;
+}
+
+%btn {
+  padding: 10px 20px;
+  background-color: #5B5C5A;
+  display: inline-block;
+}
